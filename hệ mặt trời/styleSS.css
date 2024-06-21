@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    margin: 0 auto;
+    width:100%;
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.hero {
+    height: 110vh;
+    width: 100%;
+    background-image: url("https://i.pinimg.com/originals/57/5b/22/575b2232a2931c2332243609d2d329f2.gif");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero .content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: white;
+    margin: 20px 0;
+    font-size: 75px;
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-size: 27px;
+}
+
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, minmax(150px, auto));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 100px 0;
+}
+
+#grid-container div {
+    position: relative;
+    overflow: hidden;
+    padding: 80px;  
+    background-size: cover;
+    background-position: center;
+}
+
+.one {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    background-image: url("https://wallpapercave.com/wp/HKOjqGW.png");
+}
+
+.one:hover{
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1); 
+    transform: scale(1.05);
+     transition: .2s;
+}
+
+.one h3{
+    left:5%;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.two {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    background-image: url("https://toplist.vn/images/800px/sao-hoa-di-vao-mot-cum-sao-ngay-2-thang-6-1095408.jpg");
+}
+
+.two:hover{
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1); 
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.two h3{
+    left:5%;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.three {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    background-image: url("https://wallpapercave.com/wp/wp4221745.jpg");
+}
+
+.three:hover{
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1); 
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.three  h3{
+    left:5%;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.four {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    background-image: url("https://wallpapercave.com/wp/wp4221815.jpg");
+}
+
+.four:hover{
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1); 
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.four  h3{
+    left:5%;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.image-info {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://c02.purpledshub.com/uploads/sites/48/2019/03/enceladus_geysers-9dff48f.jpg?w=1175&webp=1");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 10px;
+}
+
+.image-info .text {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-100%);
+    font-family:'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: white;
+    margin: 10px 0;
+    font-size: 70px;
+}
+
+
+pre {
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.about {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.about video {
+    height: auto;
+    width: 650px;
+    order: 2;
+    margin-left: 20px;
+}
+
+.about-text {
+    width: 500px;
+    order: 1;
+    margin-right: 15px;
+}
+
+.main {
+    width: 2000px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1 {
+    color: rgb(0, 0, 0);
+    font-size: 65px;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+}
+
+.about-text h6 {
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 10px;
+    margin-left: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about-text p {
+    color: rgb(4, 0, 0);
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+
+/* carousel */
+.carousel{
+    height: 100vh;
+    margin-top: 30px;
+    width: 99vw;
+    overflow: hidden;
+    position: relative;
+    
+}
+.carousel .list .item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+}
+.carousel .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel .list .item .content{
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004;
+}
+
+.carousel .list .item.topic{
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+/* thumbail */
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+.thumbnail .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+.thumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.thumbnail .item .content{
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+.thumbnail .item .content .title{
+    font-weight: 500;
+}
+.thumbnail .item .content .description{
+    font-weight: 300;
+}
+/* arrows */
+.arrows{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.arrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee4;
+    border: none;
+    color: #fff;
+    font-family: monospace;
+    font-weight: bold;
+    transition: .5s;
+}
+.arrows button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* animation */
+.carousel .list .item:nth-child(1){
+    z-index: 1;
+}
+
+/* animation text in first item */
+
+.carousel .list .item:nth-child(1) .content .title,
+.carousel .list .item:nth-child(1) .content .des
+{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s 1s linear 1 forwards;
+}
+@keyframes showContent{
+    to{
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+.carousel .list .item:nth-child(1) .content .title{
+    animation-delay: 1.2s!important;
+}
+
+.carousel .list .item:nth-child(1) .content .des{
+    animation-delay: 1.6s!important;
+  
+}
+
+/* create animation when next click */
+.carousel.next .list .item:nth-child(1) img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showImage .5s linear 1 forwards;
+}
+@keyframes showImage{
+    to{
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.carousel.next .thumbnail .item:nth-last-child(1){
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.carousel.prev .list .item img{
+    z-index: 100;
+}
+@keyframes showThumbnail{
+    from{
+        width: 0;
+        opacity: 0;
+    }
+}
+.carousel.next .thumbnail{
+    animation: effectNext .5s linear 1 forwards;
+}
+
+@keyframes effectNext{
+    from{
+        transform: translateX(150px);
+    }
+}
+
+/* running time */
+
+.carousel .time{
+    position: absolute;
+    z-index: 1000;
+    width: 0%;
+    height: 3px;
+    background-color: #f1683a;
+    left: 0;
+    top: 0;
+}
+
+.carousel.next .time,
+.carousel.prev .time{
+    animation: runningTime 3s linear 1 forwards;
+}
+@keyframes runningTime{
+    from{ width: 100%}
+    to{width: 0}
+}
+
+
+/* prev click */
+
+.carousel.prev .list .item:nth-child(2){
+    z-index: 2;
+}
+
+.carousel.prev .list .item:nth-child(2) img{
+    animation: outFrame 0.5s linear 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@keyframes outFrame{
+    to{
+        width: 150px;
+        height: 220px;
+        bottom: 50px;
+        left: 50%;
+        border-radius: 20px;
+    }
+}
+
+.carousel.prev .thumbnail .item:nth-child(1){
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.carousel.next .arrows button,
+.carousel.prev .arrows button{
+    pointer-events: none;
+}
+
+.carousel.prev .list .item:nth-child(2) .content .title,
+
+.carousel.prev .list .item:nth-child(2) .content .des
+{
+    animation: contentOut 1.5s linear 1 forwards!important;
+}
+
+@keyframes contentOut{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 678px) {
+    .carousel .list .item .content{
+        padding-right: 0;
+    }
+    .carousel .list .item .content .title{
+        font-size: 30px;
+    }
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.sticky-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Viền dưới của thanh menu */
+    background-color: #ffffff00; /* Thay đổi màu nền của thanh menu thành đen */
+}
+
+.container-fluid {
+    max-width: 1366px;
+}
+
+.top-bar {
+    position: absolute;
+    height: 45px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    background-color: #ffffff00; /* Thay đổi màu nền của top-bar thành đen */
+}
+
+.top-bar .top-bar-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.top-bar .top-bar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.top-bar .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 45px;
+    padding: 0 10px;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+}
+
+.top-bar .text:last-child {
+    border-right: 1px solid rgba(255, 255, 255, .3);
+}
+
+.top-bar .text i {
+    font-size: 16px;
+    color: #FDBE33;
+    margin-right: 5px;
+}
+
+.top-bar .text p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.top-bar .social {
+    display: flex;
+    height: 74px;
+    font-size: 0;
+    justify-content: flex-end;
+}
+
+.top-bar .social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 100%;
+    font-size: 16px;
+    color: #FDBE33;
+}
+
+.top-bar .social a:first-child {
+    border-left: 1px solid rgba(255, 255, 255, .3);
+}
+
+.top-bar .social a:hover {
+    color: #ffffff;
+    background: #FDBE33;
+}
+
+@media (min-width: 992px) {
+    .top-bar {
+        padding: 0 60px;
+    }
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: rgb(220, 84, 111);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 30px 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: rgb(186, 93, 118);
+    transition: 2s;
+}
+
+.navbar {
+    transition: .5s;
+    z-index: 999;
+    background-color: #00000000; /* Thay đổi màu nền của navbar thành đen */
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #FDBE33;
+    transition: none;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        padding: 20px 60px;
+        background: transparent !important;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    .navbar.nav-sticky {
+        padding: 10px 60px;
+        background: #000000 !important; /* Thay đổi màu nền của navbar sticky thành đen */
+        border-bottom: none;
+    }
+
+    .page .navbar {
+        background: #000000 !important; /* Thay đổi màu nền của navbar trong trang thành đen */
+    }
+
+    .navbar a.nav-link {
+        padding: 8px 15px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 15px;
+        background: #000000 !important; /* Thay đổi màu nền của navbar thành đen */
+    }
+
+    .navbar a.nav-link {
+        padding: 5px;
+    }
+
+    .navbar .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding */
+    text-align: center; /* Center-align text */
+}
+
+/* Social icons */
+.social a {
+    color: #fff; /* Icon color */
+    margin-right: 10px; /* Spacing between icons */
+}
+
+/* Additional info */
+.additional-info ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin-top: 10px; /* Add spacing from social icons */
+}
+
+.additional-info ul li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 10px; /* Spacing between list items */
+}
+
+.additional-info ul li a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Contact info */
+.contact-info {
+    margin-top: 20px; /* Add spacing from additional info */
+}
+
+.contact-info p {
+    font-weight: bold; /* Make the heading bold */
+}
+
+.contact-info ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+.contact-info ul li {
+    margin-top: 5px; /* Add spacing between list items */
+}
