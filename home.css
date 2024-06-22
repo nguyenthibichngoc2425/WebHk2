@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -29,10 +30,6 @@
     color: white;
     font-size: 4rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.container-fluid {
-    max-width: 1366px;
 }
 
 .top-bar {
@@ -115,17 +112,6 @@
     .top-bar {
         padding: 0 60px;
     }
-}
-
-.logo {
-    color: white;
-    font-size: 30px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-
-span {
-    color: rgb(220, 84, 111);
 }
 
 nav ul li {

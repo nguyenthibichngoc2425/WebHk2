@@ -1,28 +1,33 @@
 
-.hero{
+.hero {
+    position: relative;
+    overflow: hidden;
     height: 100vh;
-    width:100%;
-    background-image :url("https://s7.ezgif.com/tmp/ezgif-7-5731f759c3.gif");
-    background-size: cover;
-    background-position: center;
+}
+
+.hero-video {
+    position: absolute;
+    width: auto;
+    height: auto;
 
 }
 
-span{
-    color:rgb(29, 58, 67);
-}
-
-.content {
+.hero .content {
     position: absolute;
     top: 50%;
     right: 8%; 
     transform: translateY(100%);
     transform: translateX(20%);
 }
-.hero h1{
+
+.hero .content h1 {
     color:rgb(254, 249, 249);
     margin: 20px 0px 20px;
     font-size: 75px;
+}
+
+span{
+    color:rgb(29, 58, 67);
 }
 
 .hero h4{
