@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    align-items: center;
+}
+*{
+    margin:0;
+    padding :2px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+
+  /* menu */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(243, 237, 237, 0.5);
+    padding: 20px 55px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+
+.navbar .menu {
+    display: flex;
+}
+
+.navbar .menu a {
+    padding: 14px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #04a6bd;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar .menu a:hover {
+    background-color: #04a6bd;
+    color: black;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: rgb(22, 21, 21);
+    cursor: pointer;
+}
+.content {
+    max-width: 800px;
+    margin: 60px auto 20px;
+    padding: 20px;
+   
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+article {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    padding-top:20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section.intro p, section.content p, section.discoveries p {
+    text-align: justify;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 40px;
+    color: #333;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 70%; 
+    height: auto;
+    display: block;
+    margin: 0 auto;  
+   
+}
+
+figcaption {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+section.intro {
+    margin-bottom: 40px;
+}
+
+section.content, section.discoveries {
+    margin-bottom: 20px;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff6347;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    color: #ddd;
+    text-decoration: none;
+}
+.footer-section.about{
+    padding: 0;
+    background-color: #333;
+
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-section ul li i {
+    margin-right: 10px;
+}
+
+.footer-section .social a {
+    font-size: 18px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    align-items: center;
+
+}
+
+.footer-section .social a.facebook {
+    color: #3b5998; /* Facebook blue */
+}
+
+.footer-section .social a.twitter {
+    color: #00acee; /* Twitter blue */
+}
+
+.footer-section .social a.instagram {
+    color: #C13584; /* Instagram gradient */
+}
+
+.footer-section .social a.linkedin {
+    color: #0e76a8; /* LinkedIn blue */
+}
+
+.footer-section .social a:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.footer-section a:hover,
+.footer-section .social a:hover {
+    color: #ff6347;
+}
+
+.footer-bottom a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
+@media (min-width: 740px) and (max-width: 1023px){
+   
+}
+@media (max-width: 739px){
+    .navbar{
+        width:320px;
+        display: flex;
+        padding :0 10px;
+    }
+}

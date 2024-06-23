@@ -1,0 +1,510 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+
+/* test code */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(243, 237, 237, 0.5);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+
+.navbar .menu {
+    display: flex;
+}
+
+.navbar .menu a {
+    padding: 14px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #04a6bd;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar .menu a:hover {
+    background-color: #04a6bd;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: rgb(22, 21, 21);
+    cursor: pointer;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    margin-top: 0;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@media screen and (max-width: 600px) {
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar .menu-icon {
+        display: block;
+    }
+    .navbar.responsive .menu {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+/* test code LMC */
+
+nav{
+    /* height: 50px; */
+    /* background: rgb(19, 19, 19); */
+    background-color: transparent;
+}
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+}
+nav .menu ul{
+    text-align: center;
+    list-style: none;
+}
+nav .menu ul li{
+    float: none;
+    line-height: 25px;
+    /* padding: 10 15px; */
+    padding-top: 10px;
+}
+nav .menu ul li a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+/* test code Baby */
+.sticky-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Viền dưới của thanh menu */
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://image.baohatinh.vn/w810/news/2010/108d6211802t4453l6.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px; 
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: rgb(18, 17, 17);
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 55px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 45px;
+}
+
+.service {
+    background-color: black;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2 {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 365px;
+    width: 330px;
+    padding: 20px 35px;
+    background-color: rgb(19, 19, 19);
+    border-radius: 50px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fcfc;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button {
+    background-color: #8a455b;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 9px 22px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: .2s;
+}
+
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+.contact-me {
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-me p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.contact-me .button-two {
+    background-color: #8a455b;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 13px 30px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: .2s;
+}
+
+.contact-me .button-two:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+.navbar {
+    transition: .5s;
+    z-index: 999;
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #FDBE33;
+    transition: none;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        padding: 20px 60px;
+        background: transparent !important;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    .navbar.nav-sticky {
+        padding: 10px 60px;
+        background: #20212B !important;
+        border-bottom: none;
+    }
+
+    .page .navbar {
+        background: #20212B !important;
+    }
+
+    .navbar a.nav-link {
+        padding: 8px 15px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 15px;
+        background: #20212B !important;
+    }
+
+    .navbar a.nav-link {
+        padding: 5px;
+    }
+
+    .navbar .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+.card1 {
+    background-image: url('https://wallpapercave.com/wp/wp4012577.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card2 {
+    background-image: url('https://wallpapercave.com/wp/wp3896414.jpg');
+    background-position: center;
+}
+
+
+
+.card h5,
+.card .pra p,
+.card .button {
+    position: relative;
+    z-index: 1;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    border-radius: 50px;
+}
+
+.card h5,
+.card .pra p {
+    color: white;
+}
+
+.contact-me .button-two:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+/* Footer styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff6347;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    color: #ddd;
+    text-decoration: none;
+}
+.footer-section.about{
+    padding: 0;
+    background-color: #333;
+
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-section ul li i {
+    margin-right: 10px;
+}
+
+.footer-section .social a {
+    font-size: 18px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    align-items: center;
+
+}
+
+.footer-section .social a.facebook {
+    color: #3b5998; /* Facebook blue */
+}
+
+.footer-section .social a.twitter {
+    color: #00acee; /* Twitter blue */
+}
+
+.footer-section .social a.instagram {
+    color: #C13584; /* Instagram gradient */
+}
+
+.footer-section .social a.linkedin {
+    color: #0e76a8; /* LinkedIn blue */
+}
+
+.footer-section .social a:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.footer-section a:hover,
+.footer-section .social a:hover {
+    color: #ff6347;
+}
+
+.footer-bottom a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
